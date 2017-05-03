@@ -22,6 +22,7 @@
  */
 #ifndef CASTERBOARD_H
 #define CASTERBOARD_H
+#include <QMap>
 #include <QWidget>
 
 //forward declarations
@@ -45,41 +46,7 @@ private:
     //Private Methods
 
     //WIDGETS
-    CasterPlayerWidget *player1;
-    CasterPlayerWidget *player2;
-    CasterPlayerWidget *player3;
-    CasterPlayerWidget *player4;
-    CasterPlayerWidget *player5;
-    CasterPlayerWidget *player6;
-    CasterPlayerWidget *player7;
-    CasterPlayerWidget *player8;
-
-    CasterPlayerWidget *playerQ;
-    CasterPlayerWidget *playerW;
-    CasterPlayerWidget *playerE;
-    CasterPlayerWidget *playerR;
-    CasterPlayerWidget *playerT;
-    CasterPlayerWidget *playerY;
-    CasterPlayerWidget *playerU;
-    CasterPlayerWidget *playerI;
-
-    CasterPlayerWidget *playerA;
-    CasterPlayerWidget *playerS;
-    CasterPlayerWidget *playerD;
-    CasterPlayerWidget *playerF;
-    CasterPlayerWidget *playerG;
-    CasterPlayerWidget *playerH;
-    CasterPlayerWidget *playerJ;
-    CasterPlayerWidget *playerK;
-
-    CasterPlayerWidget *playerZ;
-    CasterPlayerWidget *playerX;
-    CasterPlayerWidget *playerC;
-    CasterPlayerWidget *playerV;
-    CasterPlayerWidget *playerB;
-    CasterPlayerWidget *playerN;
-    CasterPlayerWidget *playerM;
-    CasterPlayerWidget *playerCOMMA;
+    QMap<Qt::Key, CasterPlayerWidget*> players;
 
 signals:
     //SIGNALS

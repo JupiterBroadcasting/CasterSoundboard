@@ -135,9 +135,10 @@ CasterPlayerWidget::CasterPlayerWidget(QWidget* parent) : QWidget(parent)
 }
 
 //Set Properties
-void CasterPlayerWidget::setHotKeyLetter(QString hotKey)
+void CasterPlayerWidget::setHotKeyLetter(QChar hotKey)
 {
-    hotKeyLabel->setText(hotKey);
+    QString text(hotKey);
+    hotKeyLabel->setText(text);
 }
 
 //----SIGNALS----

@@ -43,7 +43,7 @@ public:
     CasterPlayerWidget(QWidget* parent = 0); //don't forget to pass the parent
 
     //Set Properties
-    void setHotKeyLetter(QString hotKey);
+    void setHotKeyLetter(QChar hotKey);
 
     //Media Player
     QMediaPlayer *player;
