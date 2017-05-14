@@ -49,7 +49,6 @@ SOURCES += main.cpp\
     libs/osc/reader/OscReader.cpp \
     libs/osc/reader/OscValue.cpp \
     libs/osc/OscPatternMatching.cpp \
-    ColorConversion.cpp \
     libs/tools/ByteBuffer.cpp \
     libs/tools/ByteOrder.cpp \
     libs/tools/NtpTimestamp.cpp
@@ -115,7 +114,6 @@ HEADERS  += \
     libs/osc/OscAPI.h \
     libs/osc/OscPatternMatching.h \
     libs/osc/OscVersion.h \
-    ColorConversion.h \
     libs/tools/exceptions/BufferOverflowException.h \
     libs/tools/exceptions/BufferUnderflowException.h \
     libs/tools/exceptions/IllegalArgumentException.h \
